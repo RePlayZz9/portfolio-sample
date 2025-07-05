@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Blake - Creative Developer & Digital Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">RPZ</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <div class="profile-ring">
+                        <img src="https://i.pinimg.com/474x/94/c1/88/94c1885d2031c79f2b2e0ea2585836f5.jpg" alt="Replayzz" class="profile-image">
+                    </div>
+                    <div class="status-indicator">✨</div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">RePlayZz</span>
+                    <br>
+                    <span class="main-text"></span>
+                </h1>
+                <div class="hero-subtitle">Creative Developer & Digital Artist</div>
+                <p class="hero-description">
+                    I create extraordinary digital experiences that blend cutting-edge technology 
+                    with artistic vision. From interactive web applications to immersive digital art, 
+                    I bring imagination to life through code.
+                </p>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#portfolio')">
+                    ▶ View My Work
+                </button>
+                <button class="btn btn-secondary">
+                    ⬇ Download Resume
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">📧</a>
+                <a href="#" class="social-link">💼</a>
+                <a href="#" class="social-link">🐙</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('#about')">
+            <span>⬇</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Working on projects">
+                    <div class="experience-card">
+                        <div class="experience-number">5+</div>
+                        <div class="experience-text">Years Experience</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Crafting Digital Experiences with Purpose</h3>
+                    <p>I'm a passionate creative developer who believes that great design and flawless functionality should go hand in hand. With over 5 years of experience, I've had the privilege of working with startups, agencies, and established brands to bring their digital visions to life.</p>
+                    <p>My approach combines technical expertise with artistic sensibility, ensuring every project not only works beautifully but also tells a compelling story. I'm constantly exploring new technologies and design trends to stay at the forefront of digital innovation.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">WebGL</span>
+                        <span class="tech-tag">AI/ML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💻</div>
+                    <h3>Clean Code</h3>
+                    <p>Writing elegant, maintainable code that stands the test of time.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎨</div>
+                    <h3>Creative Vision</h3>
+                    <p>Blending artistic creativity with technical precision in every project.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3>Innovation</h3>
+                    <p>Pushing boundaries with cutting-edge technologies and fresh ideas.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">❤️</div>
+                    <h3>Passion</h3>
+                    <p>Genuine love for creating digital experiences that inspire and delight.</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">☕</div>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Cups of Coffee</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">💡</div>
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Creative Ideas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Services</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Comprehensive digital solutions tailored to bring your vision to life</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon blue-gradient">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern frameworks and best practices.</p>
+                    <ul class="service-features">
+                        <li>React & Next.js</li>
+                        <li>Node.js Backend</li>
+                        <li>Database Design</li>
+                        <li>API Integration</li>
+                    </ul>
+                    <button class="service-btn blue-gradient">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon purple-gradient">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that provide exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li>User Research</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Design Systems</li>
+                    </ul>
+                    <button class="service-btn purple-gradient">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon green-gradient">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile apps that engage and delight users.</p>
+                    <ul class="service-features">
+                        <li>React Native</li>
+                        <li>iOS & Android</li>
+                        <li>App Store Optimization</li>
+                        <li>Push Notifications</li>
+                    </ul>
+                    <button class="service-btn green-gradient">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon orange-gradient">🌐</div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Complete online stores with payment processing and inventory management.</p>
+                    <ul class="service-features">
+                        <li>Shopify & WooCommerce</li>
+                        <li>Payment Integration</li>
+                        <li>Inventory Management</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                    <button class="service-btn orange-gradient">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon yellow-gradient">⚡</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed up your website and improve user experience with advanced optimization.</p>
+                    <ul class="service-features">
+                        <li>Core Web Vitals</li>
+                        <li>Image Optimization</li>
+                        <li>Code Splitting</li>
+                        <li>CDN Setup</li>
+                    </ul>
+                    <button class="service-btn yellow-gradient">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon indigo-gradient">🎧</div>
+                    <h3>Consulting & Support</h3>
+                    <p>Technical guidance and ongoing support for your digital projects.</p>
+                    <ul class="service-features">
+                        <li>Technical Audits</li>
+                        <li>Code Reviews</li>
+                        <li>Team Training</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button class="service-btn indigo-gradient">Learn More →</button>
+                </div>
+            </div>
+            <div class="cta-section">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's discuss how I can help bring your ideas to life</p>
+                <button class="btn btn-primary" onclick="scrollToSection('#contact')">Get In Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Portfolio</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">A curated selection of my most impactful projects, showcasing innovation and craftsmanship</p>
+            </div>
+            
+            <div class="featured-projects">
+                <div class="featured-header">
+                    <span class="star">⭐</span>
+                    <h3>Featured Work</h3>
+                    <span class="star">⭐</span>
+                </div>
+                <div class="featured-grid">
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nexus E-Commerce Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">🔗</a>
+                                <a href="#" class="project-link">🐙</a>
+                            </div>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Nexus E-Commerce Platform</h3>
+                                <span class="project-category">Web Development</span>
+                            </div>
+                            <p>A revolutionary e-commerce platform with AI-powered recommendations and seamless checkout experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">AI/ML</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aurora Design System">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">🔗</a>
+                                <a href="#" class="project-link">🐙</a>
+                            </div>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Aurora Design System</h3>
+                                <span class="project-category">UI/UX Design</span>
+                            </div>
+                            <p>A comprehensive design system with 200+ components, used by multiple Fortune 500 companies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Storybook</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">🔍 All</button>
+                <button class="filter-btn" data-filter="web">🔍 Web Development</button>
+                <button class="filter-btn" data-filter="design">🔍 UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">🔍 Mobile Development</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mindful Mobile App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗</a>
+                            <a href="#" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Mindful Mobile App</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p>A meditation and wellness app with personalized content and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Quantum Analytics Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗</a>
+                            <a href="#" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Quantum Analytics Dashboard</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p>Real-time data visualization dashboard for financial markets with advanced charting.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stellar Brand Identity">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗</a>
+                            <a href="#" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Stellar Brand Identity</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p>Complete brand identity and website redesign for a space technology startup.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">After Effects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Neural Network Visualizer">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗</a>
+                            <a href="#" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Neural Network Visualizer</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>Interactive 3D visualization tool for understanding machine learning models.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">WebGL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <button class="btn btn-primary">👁 View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Ready to bring your vision to life? Let's discuss your project and create something extraordinary together.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always excited to take on new challenges and collaborate with passionate individuals and teams. Whether you have a specific project in mind or just want to explore possibilities, I'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon purple-gradient">📧</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">replayzz@example.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon blue-gradient">📞</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">87066076776</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon green-gradient">📍</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Astana, Kazakhstan</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">🐙</a>
+                            <a href="#" class="social-link">💼</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">💬</a>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <div class="availability-status">
+                            <div class="status-dot"></div>
+                            <span>Available for New Projects</span>
+                        </div>
+                        <p>Currently accepting new client work and exciting collaborations for Q1 2025.</p>
+                        <div class="response-time">
+                            <span>🕐</span>
+                            Typical response time: 24 hours
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Start a Conversation</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Project Type *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Web Development, UI/UX Design, Mobile App...">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project goals, timeline, and any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span class="submit-text">📤 Send Message</span>
+                            <span class="submit-loading" style="display: none;">⏳ Sending...</span>
+                        </button>
+                        <div class="form-note">
+                            <span>✅</span>
+                            I'll respond within 24 hours
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Replayzz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
